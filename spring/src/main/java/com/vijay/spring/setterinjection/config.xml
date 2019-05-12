@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-    
-    <bean name = "emp" class = "com.vijay.spring.setterinjection.Employee">
-    	<!-- value as element -->
-    	<!-- <property name = "empId">
-    		<value>101</value>
-    	</property>
-    	<property name = "empName">
-    		<value>Vijay Pandey</value>
-    	</property> -->
-    	
-    	<!-- value as attribute -->
-    	<property name = "empId" value = "102"/>
-    	
-    	<property name = "empName" value = "Kumar"/>
-    
-    	
-    </bean>
+
+	<bean name="emp" class="com.vijay.spring.setterinjection.Employee"
+		p:empId="301" p:empName="Vijay Kumar" />
+	<!-- value as element -->
+	<!-- <property name = "empId"> <value>101</value> </property> <property 
+		name = "empName"> <value>Vijay Pandey</value> </property> -->
+
+	<!-- value as attribute -->
+	<!-- <property name = "empId" value = "102"/> <property name = "empName" 
+		value = "Kumar"/> -->
+
+
+
 
 </beans>
