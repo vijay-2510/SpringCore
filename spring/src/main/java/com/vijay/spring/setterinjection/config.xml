@@ -8,12 +8,19 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
     
     <bean name = "emp" class = "com.vijay.spring.setterinjection.Employee">
-    	<property name = "empId">
+    	<!-- value as element -->
+    	<!-- <property name = "empId">
     		<value>101</value>
     	</property>
     	<property name = "empName">
     		<value>Vijay Pandey</value>
-    	</property>
+    	</property> -->
+    	
+    	<!-- value as attribute -->
+    	<property name = "empId" value = "102"/>
+    	
+    	<property name = "empName" value = "Kumar"/>
+    
     	
     </bean>
 
