@@ -10,16 +10,16 @@
 
 	<bean name="carDealer"
 		class="com.vijay.spring.setterinjection.set.CarDealer">
-		<property name="dealerName" value="VijayHyundai" />
+		<property name="dealerName" value="Vijay Hyundai" />
 		<property name="carModels">
-			<list>
+			<set>
 				<value>i10</value>
 				<value>i20</value>
 				<value>i20</value><!-- duplicates can be written here but it won't be 
 					added to the set. -->
 				<null /> <!-- duplicates null can be written here but it won't be added to the set. -->
 				<null />
-			</list>
+			</set>
 		</property>
 	</bean>
 
