@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- if no matching type is there null is assigned to bean or if more than
+	two bean of same type available exception is thrown in "byType"
+	autowiring. -->
+	<bean name="score"
+		class="com.vijay.spring.autowiring.bytype.Score" p:physics="98.5"
+		p:chemistry="92.5" p:maths="99" />
+	<bean name="student1"
+		class="com.vijay.spring.autowiring.bytype.Student" p:id="101"
+		autowire="byType" />
+
+</beans>
